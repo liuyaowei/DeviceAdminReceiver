@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.os.Build;
 
 /**
- * 作者：耀威 ;日期：2016-07-14.
+ * 作者：liuyaowei ;日期：2016-07-14.
  * QQ:1054185214
  * 类作用：设备管理器服务类  手机上的位置：设置--安全与隐私--设备管理器
  */
