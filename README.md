@@ -1,0 +1,2 @@
+# DeviceAdminReceiver
+template for DeviceAdminReceiver
