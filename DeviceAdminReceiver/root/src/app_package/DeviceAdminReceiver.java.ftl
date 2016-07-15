@@ -79,6 +79,6 @@ public class ${className} extends DeviceAdminReceiver {
         Intent intent=new Intent();
         intent.setAction("android.app.action.DEVICE_ADMIN_ENABLED");
         intent.addFlags(flag);
-        context.sendBroadcast(intent，"android.permission.BIND_DEVICE_ADMIN");
+        context.sendBroadcast(intent,"android.permission.BIND_DEVICE_ADMIN");
     }
 }
