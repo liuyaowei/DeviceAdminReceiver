@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="3"
+    name="DeviceAdminReceiver"
+    description="Creates a new DeviceAdminReceiver component and adds it to your Android manifest.">
+	
+  <category value="Broadcast Receiver" />
+  
+  <parameter
+        id="className"
+        name="Class Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MyDeviceAdminReceiver"     
+		help="The name of the DeviceAdminReceiver component class to create"/>
+
+
+    <parameter
+        id="isExported"
+        name="Exported"
+        type="boolean"
+        default="true"
+        help="Whether or not the broadcast receiver can receive messages from sources outside its application" />
+
+    <parameter
+        id="isEnabled"
+        name="Enabled"
+        type="boolean"
+        default="true"
+        help="Whether or not the broadcast receiver can be instantiated by the system" />
+    
+    <parameter
+            id="packageName"
+            name="Package name"
+            type="string"
+            constraints="package"
+            default="com.mycompany.myapp"/>
+  
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
